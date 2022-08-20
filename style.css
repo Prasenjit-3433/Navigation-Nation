@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 :root {
   --primaryColor: #fff;
@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   background: #000;
-
+  font-family: 'Nunito', sans-serif;
 }
 
 /* --- Navigation Menu ------------------------------ */
