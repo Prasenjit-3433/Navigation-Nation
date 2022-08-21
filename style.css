@@ -31,8 +31,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  /* translate along x-axis and want it to be the full width of the screen off the page: */
-  transform: translateX(-100vw); 
+  
 }
 
 /* Bring Overlay back right in the screen */
