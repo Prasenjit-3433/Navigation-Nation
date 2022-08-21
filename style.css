@@ -11,6 +11,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,22 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  /* translate along x-axis and want it to be the full width of the screen off the page: */
+  transform: translateX(-100vw); 
+}
+
+/* Bring Overlay back right in the screen */
+.overlay-slide-right {
+  /* This will allow the translate we have above to be changed in a smooth way: */
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+/* Bring Overlay out of the screen */ 
+.overlay-slide-left {
+  /* This will allow the translate we have above to be changed in a smooth way: */
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
 }
 
 /* Nav Menu Items */
