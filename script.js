@@ -4,9 +4,10 @@ const navItems = overlay.querySelectorAll('nav ul li');
 
 // Controll Navigation Animation
 function navAnimation(direction1, direction2) {
-    for (i = 0; i < navItems.length; i++) {
-        navItems[i].classList.replace(`slide-${direction1}-${i+1}`, `slide-${direction2}-${i+1}`);
-    }
+    navItems.forEach((navItem, i) => {
+        navItem.classList.replace(`slide-${direction1}-${i + 1}`, `slide-${direction2}-${i + 1}`);
+        console.log(i);
+    });
 }
 
 function toggleNav() {
